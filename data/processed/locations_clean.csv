@@ -1,0 +1,167 @@
+﻿id;ville;quartier;type_bien;surface_m2;surface_estimee;nb_pieces;nb_chambres;meuble;equipements;prix_loyer_mensuel;titre;date_publication;prix_atypique;nb_pieces_imputee;nb_chambres_imputee
+6a3a5671468a708472e39b6a;Dakar;Mermoz - Sacré-Cœur;appartement;67.2;True;3.0;2.0;False;piscine|gardiennage|parking|salle_de_sport;900000;Bel appartement neuf à Mermoz ;2026-06-23T09:48:33.330Z;False;False;False
+6a3a54fd468a708472e39b5d;Dakar;Fann - Point E;appartement;64.2;True;3.0;2.0;False;climatisation|gardiennage|parking|meuble;1150000;À LOUER - APPARTEMENT MEUBLÉ HAUT STANDING AU POINT E;2026-06-23T09:42:21.990Z;False;False;False
+6a3a5453468a708472e39b56;Dakar;Almadies;appartement;73.4;True;3.0;2.0;False;piscine|climatisation|gardiennage|meuble;900000;À LOUER  – APPARTEMENT HAUT STANDING AUX ALMADIES;2026-06-23T09:39:31.089Z;False;False;False
+6a2c75214e70616a9aaeeaea;Diakhirate;Nouvel Horizon;appartement;75.3;True;4.0;3.0;False;;170000;Appartement à louer;2026-06-12T21:07:45.550Z;False;False;False
+6a2066514f9b3394cf0b3cce;Dakar;Almadies;appartement;47.6;True;4.0;3.0;False;piscine|gardiennage|parking|salle_de_sport;1300000;À LOUER – Appartement de standing 4ᵉ étage aux Almadies, Dakar;2026-06-03T17:37:21.774Z;False;True;True
+6a2065834f9b3394cf0b3cc9;Dakar;Fann - Point E;appartement;63.1;True;4.0;2.0;False;climatisation|gardiennage|parking|meuble|terrasse|salle_de_sport;2500000;FANN RÉSIDENCE - APPARTEMENT MEUBLÉ VUE MER ;2026-06-03T17:33:55.331Z;False;True;False
+6a2062a14f9b3394cf0b3cc5;Dakar;Ngor;appartement;290.0;False;4.0;5.0;False;piscine|parking|salle_de_sport;1500000;PENTHOUSE F6 HAUT STANDING AU VIRAGE ;2026-06-03T17:21:37.246Z;False;True;False
+6a2061844f9b3394cf0b3cc3;Dakar;Almadies;appartement;52.8;True;4.0;2.0;False;climatisation|gardiennage|meuble;650000;APPARTEMENT MEUBLÉ AUX ALMADIES ;2026-06-03T17:16:52.809Z;False;True;False
+6a1f0e8652a4860388ed703b;Dakar;Mermoz - Sacré-Cœur;appartement;130.0;True;5.0;3.0;False;gardiennage;300000;Appartement F4 amitié 3 karack;2026-06-02T17:10:30.244Z;False;False;False
+69e8c2da63d092b42a75eead;Dakar;Ngor;appartement;62.9;True;3.0;2.0;False;gardiennage|meuble;50000;DAKAR NGOR : Appartement 2 chambres salon meublé Ngor Almadies non loin du stade;2026-04-22T12:45:14.870Z;False;False;False
+69e8c28363d092b42a75ee9d;Dakar;Fann;appartement;58.7;True;3.0;2.0;False;piscine|gardiennage|parking|salle_de_sport;1200000;DAKAR FANN : Appartement F3 à louer Corniche Ouest;2026-04-22T12:43:47.628Z;False;False;False
+69e8c15863d092b42a75ee5d;Dakar;Ouakam;appartement;65.8;True;3.0;2.0;False;parking|terrasse;1200000;DAKAR OUAKAM : Appartement à louer 2 chambres – Noëlla – Cité Africa;2026-04-22T12:38:48.573Z;False;False;False
+69e8c15563d092b42a75ee5c;Dakar;Fann;appartement;78.9;True;4.0;3.0;False;piscine|gardiennage|terrasse;1200000;DAKAR FANN RÉSIDENCE : Appartement 3 chambres à louer – San Marco;2026-04-22T12:38:45.124Z;False;False;False
+69e8c15263d092b42a75ee5b;Dakar;Mermoz;appartement;82.5;True;3.0;2.0;False;gardiennage|parking|salle_de_sport;850000;DAKAR MERMOZ : Appartement 2 chambres à louer – Madieme;2026-04-22T12:38:42.319Z;False;False;False
+69e8c14f63d092b42a75ee5a;Dakar;Mermoz;appartement;103.1;True;4.0;3.0;False;gardiennage;800000;DAKAR MERMOZ : Appartement à louer – Lovoa;2026-04-22T12:38:39.325Z;False;False;False
+69e8c14c63d092b42a75ee59;Dakar;Point E;appartement;97.5;True;4.0;3.0;False;piscine|gardiennage|parking;1300000;DAKAR POINT-E : Appartement à louer 3 chambres – Celina;2026-04-22T12:38:36.126Z;False;False;False
+69e8c14a63d092b42a75ee58;Dakar;Mermoz;appartement;79.3;True;4.0;3.0;False;gardiennage;1100000;DAKAR MERMOZ : Appartement à louer 3 chambres – Adja Louise;2026-04-22T12:38:34.078Z;False;False;False
+69e8c14663d092b42a75ee57;Dakar;Almadies;appartement;98.4;True;4.0;3.0;False;piscine|gardiennage|parking|salle_de_sport;1600000;DAKAR ALMADIES : Appartement à louer – 3 chambres – Méridienne;2026-04-22T12:38:30.081Z;False;False;False
+69e8c14363d092b42a75ee56;Dakar;Almadies;appartement;94.2;True;4.0;3.0;False;gardiennage|terrasse;1100000;DAKAR ALMADIES : Appartement 3 chambres à louer – Sande Marieme;2026-04-22T12:38:27.574Z;False;False;False
+69e8c13f63d092b42a75ee55;Dakar;Plateau;appartement;99.5;True;4.0;3.0;False;gardiennage|meuble|terrasse;1700000;DAKAR PLATEAU : Appartement 3 chambres à louer – Résidence Oliviers;2026-04-22T12:38:23.583Z;False;False;False
+69e8c13b63d092b42a75ee54;Dakar;Point E;appartement;75.3;True;4.0;3.0;False;piscine|gardiennage;1100000;DAKAR POINT-E : Appartement 3 chambres à louer – Planta;2026-04-22T12:38:19.823Z;False;False;False
+69e8c0a663d092b42a75ee32;Dakar;Mermoz;appartement;127.7;True;5.0;4.0;False;climatisation|gardiennage|parking;3250000;DAKAR MERMOZ : Appartement à louer 4 chambres – Moonligh;2026-04-22T12:35:50.320Z;False;False;False
+69e8c05a63d092b42a75ee24;Dakar;Fann;appartement;300.0;False;6.0;4.0;False;;2500000;DAKAR FANN : Appartement de 4 chambres salon a louer;2026-04-22T12:34:34.572Z;False;False;False
+69e8c04963d092b42a75ee1f;Thiès;Ngaparou;appartement;61.8;True;3.0;2.0;False;meuble|terrasse;350000;NGAPAROU : Magnifique Appartement non meublé à louer;2026-04-22T12:34:17.322Z;False;False;False
+69e8c04163d092b42a75ee1d;Thiès;Ngaparou;appartement;600.0;False;4.0;3.0;False;piscine|terrasse;500000;NGAPAROU : Appartement à louer 3 chambres;2026-04-22T12:34:09.573Z;False;False;False
+69e8c03663d092b42a75ee1a;Thiès;Ngaparou;appartement;51.3;True;2.0;1.0;False;climatisation|gardiennage|meuble;400000;NGAPAROU : Magnifique studio à Vendre – Résidence sécurisée;2026-04-22T12:33:58.075Z;False;False;False
+69e8c00663d092b42a75ee13;Thiès;Saly;appartement;99.9;True;4.0;3.0;False;piscine|meuble|jardin|terrasse;600000;SALY : Spacieux appartement F4 à louer en résidence privée;2026-04-22T12:33:10.323Z;False;False;False
+69e8bfe663d092b42a75ee09;Dakar;Cité Keur Gorgui;appartement;79.4;True;4.0;2.0;False;gardiennage|parking|meuble;65000;DAKAR CITÉ KEUR GORGUI : Appartement meublé à louer – Haut Standing;2026-04-22T12:32:38.074Z;False;False;False
+69e8bfdf63d092b42a75ee07;Dakar;Mermoz;appartement;120.0;True;5.0;4.0;False;gardiennage|parking|meuble|terrasse;3000000;DAKAR MERMOZ : Appartement à louer 4 chambres –  CORNICHE OUEST;2026-04-22T12:32:31.608Z;False;False;False
+69e8bf9463d092b42a75edf7;Dakar;Cité Keur Gorgui;appartement;86.5;True;4.0;3.0;False;gardiennage|parking;500000;DAKAR CITÉ KEUR GORGUI : Appartement F4 haut standing à louer;2026-04-22T12:31:16.074Z;False;False;False
+69e8bf5463d092b42a75ede9;Dakar;Mamelles;appartement;80.9;True;4.0;3.0;False;climatisation;500000;DAKAR MAMELLES : Appartement à louer 3 chambres;2026-04-22T12:30:12.822Z;False;False;False
+69e8bf4163d092b42a75ede4;Dakar;Grand Dakar;appartement;91.2;True;4.0;3.0;False;gardiennage|parking;600000;GRAND-DAKAR : Appartement 3 chambres à louer;2026-04-22T12:29:53.572Z;False;False;False
+69e8bf3d63d092b42a75ede3;Dakar;Plateau;appartement;103.1;True;4.0;3.0;False;gardiennage|parking;1300000;DAKAR PLATEAU : Appartement à louer – 3 chambres – PORT VIEW;2026-04-22T12:29:49.322Z;False;False;False
+69e8bf3a63d092b42a75ede2;Dakar;Almadies;appartement;95.6;True;5.0;3.0;False;gardiennage|parking|meuble|terrasse;2750000;DAKAR ALMADIES : Appartement à louer – 3 chambres et bureau – SEA SIDE;2026-04-22T12:29:46.074Z;False;False;False
+69e8bf1463d092b42a75eddb;Dakar;Point E;appartement;88.8;True;4.0;3.0;False;gardiennage|parking;1600000;DAKAR POINT-E : Appartement F4 de standing à louer;2026-04-22T12:29:08.865Z;False;False;False
+69e8beea63d092b42a75edd0;Dakar;Ngor;appartement;98.9;True;5.0;4.0;False;;1000000;NGOR : Appartement à louer F5;2026-04-22T12:28:26.572Z;False;False;False
+69e8bedb63d092b42a75edcc;Dakar;Point E;appartement;52.8;True;2.0;1.0;False;climatisation|gardiennage|meuble;600000;DAKAR POINT-E : Appartement F2 meublé à louer;2026-04-22T12:28:11.323Z;False;False;False
+69e8becb63d092b42a75edc9;Thiès;Saly;appartement;87.3;True;4.0;3.0;False;piscine|gardiennage|parking|wifi;600000;SALY : Appartement 3 chambres avec piscine à louer;2026-04-22T12:27:55.831Z;False;False;False
+69e8be8063d092b42a75edbd;Dakar;Almadies;appartement;200.0;False;2.0;1.0;False;gardiennage|meuble;600000;DAKAR ALMADIES : Appartement F2 meublé quasi neuf à louer;2026-04-22T12:26:40.572Z;False;False;False
+69e8be7a63d092b42a75edbc;Dakar;Almadies;appartement;92.4;True;5.0;3.0;False;gardiennage|parking|meuble|jardin;900000;DAKAR ALMADIES : Appartement 3 chambres meublé avec véranda lumineuse à louer;2026-04-22T12:26:34.823Z;False;False;False
+69e8be7263d092b42a75edba;Dakar;Ouakam;appartement;107.5;True;4.0;3.0;False;;500000;DAKAR OUAKAM : Appartement à louer 3 chambres;2026-04-22T12:26:26.615Z;False;False;False
+69e8be6863d092b42a75edb8;Thiès;Somone;appartement;50.3;True;2.0;2.0;False;piscine|terrasse|salle_de_sport;500000;SOMONE : Appartement à louer – 70 m2;2026-04-22T12:26:16.822Z;False;False;False
+69e8be2963d092b42a75edab;Dakar;Mermoz;appartement;88.7;True;4.0;3.0;False;piscine|gardiennage|parking|meuble|jardin|terrasse;2000000;DAKAR MERMOZ : Appartement à louer 3 chambres – Corniche Ouest;2026-04-22T12:25:13.822Z;False;False;False
+69e8be2663d092b42a75edaa;Dakar;Almadies;appartement;92.7;True;4.0;3.0;False;piscine|gardiennage|parking|salle_de_sport;1100000;DAKAR ALMADIES : Appartement à louer 3 chambres – Massamba;2026-04-22T12:25:10.323Z;False;False;False
+69e8be1e63d092b42a75eda8;Thiès;Ngaparou;appartement;90.3;True;4.0;3.0;False;terrasse;800000;NGAPAROU : Appartement duplex à louer;2026-04-22T12:25:02.323Z;False;False;False
+69e8be1a63d092b42a75eda7;Dakar;Point E;appartement;71.9;True;3.0;2.0;False;gardiennage|meuble;1300000;DAKAR POINT-E : Luxueux appartement meublé avec 2 chambres à louer;2026-04-22T12:24:58.572Z;False;False;False
+69e8be1363d092b42a75eda5;Dakar;Point E;appartement;88.8;True;4.0;3.0;False;gardiennage|meuble;1500000;DAKAR POINT-E : Appartement meublé design chaleureux 3 chambres à louer;2026-04-22T12:24:51.823Z;False;False;False
+69e8be0663d092b42a75eda1;Dakar;Point E;appartement;73.3;True;3.0;2.0;False;gardiennage|meuble;1300000;DAKAR POINT-E : Bel appartement moderne meublé à louer;2026-04-22T12:24:38.608Z;False;False;False
+69e8be0263d092b42a75eda0;Dakar;Ngor;appartement;103.7;True;5.0;3.0;False;climatisation|gardiennage|parking|meuble|terrasse;900000;DAKAR NGOR : Appartement penthouse meublé à louer;2026-04-22T12:24:34.322Z;False;False;False
+69e8bde563d092b42a75ed9c;Thiès;Ngaparou;appartement;43.9;True;2.0;1.0;False;;350000;NGAPAROU : Appartement à louer;2026-04-22T12:24:05.827Z;False;False;False
+69e8bde363d092b42a75ed9b;Thiès;Ngaparou;appartement;43.4;True;2.0;1.0;False;piscine|climatisation|gardiennage|jardin|terrasse;280000;NGAPAROU : Appartement à louer;2026-04-22T12:24:03.073Z;False;False;False
+69e8bdd263d092b42a75ed97;Thiès;Nguerine;appartement;61.1;True;3.0;2.0;False;piscine|climatisation|gardiennage|meuble|terrasse;600000;NGUERIGNE : Appartement à louer;2026-04-22T12:23:46.373Z;False;False;False
+69e8bdcc63d092b42a75ed95;Dakar;Fann;appartement;69.9;True;3.0;2.0;False;piscine|climatisation|parking|meuble;1500000;DAKAR FANN RESIDENC : Appartement F3 meublé à louer – Vue sur mer;2026-04-22T12:23:40.822Z;False;False;False
+69e8bdb863d092b42a75ed90;Thiès;Ngaparou;appartement;73.1;True;3.0;2.0;False;climatisation|gardiennage|meuble|jardin;550000;NGAPAROU : Appartement F3 neuf meublé à louer près de la mer;2026-04-22T12:23:20.323Z;False;False;False
+69e8bd8263d092b42a75ed89;Thiès;Saly;appartement;74.8;True;3.0;2.0;False;meuble;330000;SALY : Appartement à louer;2026-04-22T12:22:26.825Z;False;False;False
+69e8bd7063d092b42a75ed84;Dakar;Almadies;appartement;140.0;False;6.0;3.0;False;piscine|gardiennage|meuble;1100000;DAKAR ALMADIES : Appartement meublé 3 chambres à louer – Vue mer;2026-04-22T12:22:08.323Z;False;False;False
+69e8bd5f63d092b42a75ed80;Thiès;Somone;appartement;82.1;True;3.0;2.0;False;piscine|wifi|jardin;650000;SOMONE : Appartement a louer en bord de mer;2026-04-22T12:21:51.073Z;False;False;False
+69e8bd5563d092b42a75ed7d;Dakar;Point E;appartement;130.6;True;5.0;3.0;False;;1000000;DAKAR POINT-E : Appartement à louer;2026-04-22T12:21:41.572Z;False;False;False
+69e8bd0363d092b42a75ed6c;Dakar;Almadies;appartement;43.0;False;2.0;1.0;False;meuble;550000;DAKAR ALMADIES : Appartement meublé 1 chambre – salon – SDB à louer;2026-04-22T12:20:19.824Z;False;False;False
+69e8bcfa63d092b42a75ed69;Dakar;Point E;appartement;150.0;False;4.0;3.0;False;climatisation;950000;DAKAR POINT-E : Appartement à louer 3 chambres;2026-04-22T12:20:10.373Z;False;False;False
+69e8bccf63d092b42a75ed62;Dakar;Yoff;appartement;111.0;True;5.0;3.0;False;piscine|climatisation|gardiennage|parking|salle_de_sport;600000;DAKAR YOFF : Appartement moderne à louer – Cité DIMA;2026-04-22T12:19:27.112Z;False;False;False
+69e8bccb63d092b42a75ed61;Thiès;Saly;appartement;69.4;True;3.0;2.0;False;;400000;SALY : Appartement à louer;2026-04-22T12:19:23.362Z;False;False;False
+69e8bcc763d092b42a75ed60;Dakar;Cité Keur Gorgui;appartement;114.8;True;5.0;3.0;False;gardiennage|meuble;1000000;DAKAR CITÉ KEUR GORGUI : Appartement meublé à louer;2026-04-22T12:19:19.371Z;False;False;False
+69e8bcc363d092b42a75ed5f;Dakar;Mermoz;appartement;102.1;True;4.0;3.0;False;piscine|parking|salle_de_sport;1550000;DAKAR MERMOZ : Appartement F4 à louer – Corniche Ouest;2026-04-22T12:19:15.355Z;False;False;False
+69e8bcc063d092b42a75ed5e;Dakar;Plateau;appartement;185.0;False;4.0;3.0;False;terrasse;1000000;DAKAR PLATEAU : Appartement F4 à louer;2026-04-22T12:19:12.823Z;False;False;False
+69e8bcac63d092b42a75ed58;Dakar;Fann;appartement;104.0;True;4.0;3.0;False;gardiennage;2000000;DAKAR FANN RÉSIDENCE : Magnifique appartement à louer;2026-04-22T12:18:52.862Z;False;False;False
+69e8bca363d092b42a75ed55;Dakar;Almadies;appartement;101.6;True;4.0;3.0;False;gardiennage|parking|meuble|terrasse|salle_de_sport;1100000;DAKAR ALMADIES : Appartement à louer – 3 chambres – Le Ponant;2026-04-22T12:18:43.574Z;False;False;False
+69e8bc9d63d092b42a75ed53;Dakar;Point E;appartement;75.1;True;4.0;3.0;False;gardiennage|meuble;850000;DAKAR POINT E : Appartement à louer – 3 chambres – 2HM;2026-04-22T12:18:37.074Z;False;False;False
+6a3a55ce468a708472e39b64;Dakar;Almadies;maison;700.0;False;5.0;4.0;False;piscine|parking|wifi|jardin|terrasse;3000000;LOUER AUX ALMADIES - VILLA R+1 DE STANDING ;2026-06-23T09:45:50.974Z;False;False;False
+6a22a883c7f06c19b4bd1e87;Dakar;Almadies;maison;160.3;True;4.0;3.0;True;piscine|climatisation|gardiennage|meuble|salle_de_sport;1200000;À LOUER - T4 HAUT DE GAMME AUX MAMELLES, DAKAR;2026-06-05T10:44:19.592Z;False;False;False
+6a22a7e9c7f06c19b4bd1e80;Dakar;Almadies;maison;225.2;True;6.0;5.0;True;gardiennage|parking|jardin;3000000;À LOUER – VILLA DE HAUT STANDING AUX ALMADIES;2026-06-05T10:41:45.116Z;False;False;False
+6a22a753c7f06c19b4bd1e78;Dakar;Almadies;maison;157.6;True;4.0;3.0;True;gardiennage|parking|meuble|terrasse;2000000;À LOUER - VUE MER AUX ALMADIES 🌊  ;2026-06-05T10:39:15.934Z;False;False;False
+6a22a6b8c7f06c19b4bd1e70;Dakar;Almadies;maison;99.9;True;5.0;4.0;False;parking|meuble;15000000;À LOUER AUX ALMADIES – IMMEUBLE R+1 EN BORD DE ROUTE  🌴🏡  ;2026-06-05T10:36:40.159Z;True;True;True
+69e8c3b163d092b42a75eedc;Thiès;Ngaparou;maison;56.7;True;1.0;1.0;False;piscine|climatisation|gardiennage|meuble;210000;NGAPAROU : T1 meublé dans résidence privée à louer location longue durée;2026-04-22T12:48:49.322Z;False;False;False
+69e8c3a363d092b42a75eed8;Thiès;Nguerine;maison;242.1;True;7.0;6.0;False;piscine|climatisation|gardiennage|terrasse;1000000;NGUÉRIGNE : Villa de 4 chambres plus 2 studios indépendants avec piscine à louer;2026-04-22T12:48:35.323Z;False;False;False
+69e8c39963d092b42a75eed6;Thiès;Nguerine;maison;800.0;False;5.0;3.0;False;piscine|gardiennage|meuble|wifi|jardin|terrasse;1200000;NGUERIGNE : Villa spacieuse et lumineuse avec belle piscine en résidence à louer;2026-04-22T12:48:25.624Z;False;False;False
+69e8c37b63d092b42a75eecc;Thiès;Nguerine;maison;700.0;False;5.0;4.0;False;piscine|climatisation|terrasse;1000000;NGUERIGNE : Villa contemporaine neuve de 4 chambres avec piscine à louer;2026-04-22T12:47:55.602Z;False;False;False
+69e8c35b63d092b42a75eecb;Thiès;Nguerine;maison;750.0;False;5.0;4.0;False;piscine|climatisation|gardiennage|parking|jardin;850000;NGUERIGNE : Villa contemporaine neuve 4 chambres avec piscine à louer longue durée;2026-04-22T12:47:23.322Z;False;False;False
+69e8c32963d092b42a75eebc;Thiès;Saly;maison;153.6;True;5.0;4.0;False;piscine|gardiennage|parking|meuble|wifi|jardin|terrasse;1400000;SALY : Villa haut standing meublée à louer derrière Saly center;2026-04-22T12:46:33.322Z;False;False;False
+69e8c27a63d092b42a75ee9a;Thiès;Nguerine;maison;225.0;True;6.0;5.0;False;piscine|meuble|jardin|terrasse;1400000;NGUERIGNE : Grande maison contemporaine à louer;2026-04-22T12:43:38.074Z;False;False;False
+69e8c22d63d092b42a75ee8c;Thiès;Nguerine;maison;206.7;True;5.0;4.0;False;piscine|gardiennage;2000000;NGUERIGNE : Villa contemporaine plain pied 4 chambres à louer;2026-04-22T12:42:21.619Z;False;False;False
+69e8c22663d092b42a75ee8a;Thiès;Nguerine;maison;194.4;True;6.0;4.0;False;piscine|gardiennage|terrasse;2000000;NGUÉRIGNE : Villa standing 4 chambres avec piscine à louer;2026-04-22T12:42:14.117Z;False;False;False
+69e8c22263d092b42a75ee89;Thiès;Nguerine;maison;900.0;False;4.0;3.0;False;piscine|meuble|jardin;1500000;NGUÉRIGNE : Villa 3 chambres avec piscine à louer;2026-04-22T12:42:10.825Z;False;False;False
+69e8c1fb63d092b42a75ee80;Thiès;Somone;maison;168.2;True;5.0;4.0;False;piscine|gardiennage|wifi;1200000;SOMONE : Villa contemporaine plain pied 4 chambres avec piscine à louer;2026-04-22T12:41:31.822Z;False;False;False
+69e8c15c63d092b42a75ee5e;Thiès;Nguerine;maison;825.0;False;5.0;4.0;False;piscine|gardiennage|jardin|terrasse;1300000;NGUERIGNE : Villa contemporaine 4 chambres avec piscine en résidence privée à louer;2026-04-22T12:38:52.618Z;False;False;False
+69e8c11c63d092b42a75ee51;Dakar;Plateau;maison;88.6;True;2.0;4.0;False;;12000;DAKAR PLATEAU : Local commercial à louer – LA ROTONDE – Rez de chaussée;2026-04-22T12:37:48.829Z;True;False;True
+69e8c10363d092b42a75ee49;Thiès;Somone;maison;600.0;False;6.0;5.0;False;piscine|gardiennage|parking|meuble|terrasse;1500000;SOMONE : Villa contemporaine neuve de 5 chambres avec piscine à louer;2026-04-22T12:37:23.619Z;False;False;False
+69e8c0c963d092b42a75ee3d;Thiès;Nguerine;maison;197.1;True;5.0;4.0;False;piscine|jardin|terrasse;1300000;NGUERIGNE : Villa à louer 4 chambres en résidence;2026-04-22T12:36:25.874Z;False;False;False
+69e8c0c563d092b42a75ee3c;Thiès;Nguerine;maison;200.6;True;7.0;5.0;False;piscine;1500000;NGUERIGNE : Villa contemporaine plain-pied 5 chambres avec piscine à louer;2026-04-22T12:36:21.822Z;False;False;False
+69e8c0b463d092b42a75ee36;Thiès;Saly;maison;168.7;True;5.0;4.0;False;piscine|gardiennage|parking|meuble|jardin|terrasse;1350000;SALY : Villa meublée de 4 chambres à louer en résidence;2026-04-22T12:36:04.073Z;False;False;False
+69e8c0a863d092b42a75ee33;Thiès;Somone;maison;830.0;False;6.0;5.0;False;piscine;750000;SOMONE : Villa 5 chambres avec piscine proche de la mer à louer;2026-04-22T12:35:52.822Z;False;False;False
+69e8c09663d092b42a75ee2e;Thiès;Ngaparou;maison;300.0;False;4.0;3.0;False;piscine|jardin|terrasse;650000;NGAPAROU : Magnifique villa à louer;2026-04-22T12:35:34.322Z;False;False;False
+69e8c09063d092b42a75ee2c;Thiès;Saly;maison;188.0;True;5.0;4.0;False;gardiennage;1000000;SALY : Villa à louer R+1;2026-04-22T12:35:28.073Z;False;False;False
+69e8c06f63d092b42a75ee2a;Thiès;Saly;maison;600.0;False;4.0;3.0;False;piscine;650000;SALY : Villa 3 chambres avec piscine à louer;2026-04-22T12:34:55.074Z;False;False;False
+69e8c05e63d092b42a75ee25;Thiès;Nguerine;maison;600.0;False;4.0;3.0;False;piscine|gardiennage|meuble;800000;NGUÉRIGNE : Villa neuve 3 chambres avec piscine à louer;2026-04-22T12:34:38.076Z;False;False;False
+69e8c05663d092b42a75ee23;Dakar;Point E;maison;500.0;False;4.0;4.0;False;climatisation|parking|meuble;5000000;DAKAR POINT-E : Plateau de bureaux à louer;2026-04-22T12:34:30.322Z;False;False;False
+69e8c04563d092b42a75ee1e;Thiès;Saly;maison;600.0;False;4.0;3.0;False;piscine|jardin|terrasse;700000;SALY : Villa à louer au design chaleureux;2026-04-22T12:34:13.074Z;False;False;False
+69e8c01363d092b42a75ee17;Thiès;Nguerine;maison;248.6;True;6.0;5.0;False;piscine|gardiennage|jardin|terrasse;1500000;NGUERIGNE : Villa contemporaine de standing 5 chambres avec piscine à louer;2026-04-22T12:33:23.074Z;False;False;False
+69e8c00c63d092b42a75ee15;Thiès;Nguerine;maison;850.0;False;4.0;3.0;False;piscine|terrasse;850000;NGUERIGNE : Villa contemporaine 3 chambres avec piscine à louer;2026-04-22T12:33:16.573Z;False;False;False
+69e8c00263d092b42a75ee12;Thiès;Saly;maison;350.0;False;4.0;3.0;False;piscine|parking|meuble|jardin|terrasse;1000000;SALY : Belle villa de standing en résidence à louer;2026-04-22T12:33:06.573Z;False;False;False
+69e8bffd63d092b42a75ee10;Thiès;Nguerine;maison;206.1;True;6.0;5.0;False;gardiennage|jardin;1500000;NGUERIGNE : Magnifique villa de 5 chambres avec grand jardin à louer;2026-04-22T12:33:01.825Z;False;False;False
+69e8bfe263d092b42a75ee08;Thiès;Nguerine;maison;155.0;True;4.0;3.0;False;meuble|jardin;800000;NGUERIGNE : Villa à louer;2026-04-22T12:32:34.573Z;False;False;False
+69e8bfdd63d092b42a75ee06;Dakar;Mermoz;maison;203.5;True;5.0;4.0;False;meuble;9000;DAKAR MERMOZ : Plateau de bureaux à louer;2026-04-22T12:32:29.362Z;True;False;True
+69e8bfd963d092b42a75ee05;Thiès;Nguerine;maison;838.0;False;4.0;3.0;False;piscine|gardiennage|parking|jardin;1100000;NGUERIGNE : Villa moderne à louer;2026-04-22T12:32:25.369Z;False;False;False
+69e8bfb463d092b42a75edff;Thiès;Guéréo;maison;176.0;True;4.0;3.0;False;piscine|jardin|terrasse;700000;GUÉRÉO : Villa neuve à louer;2026-04-22T12:31:48.822Z;False;False;False
+69e8bfb063d092b42a75edfe;Thiès;Ngaparou;maison;175.5;True;5.0;4.0;False;piscine|parking|meuble|jardin|terrasse;1600000;NGAPAROU : Superbe villa à louer – Proche Piste des Milliardaires;2026-04-22T12:31:44.322Z;False;False;False
+69e8bfac63d092b42a75edfd;Thiès;Ngaparou;maison;199.2;True;5.0;4.0;False;piscine|terrasse;900000;NGAPAROU : Villa avec piscine à louer;2026-04-22T12:31:40.322Z;False;False;False
+69e8bfa963d092b42a75edfc;Thiès;Ngaparou;maison;127.3;True;4.0;3.0;False;terrasse;500000;NGAPAROU : Villa neuve à louer;2026-04-22T12:31:37.572Z;False;False;False
+69e8bfa163d092b42a75edfa;Thiès;Ngaparou;maison;165.7;True;5.0;4.0;False;piscine|meuble|jardin;850000;NGAPAROU : Villa meublée à louer – 3ème ligne de la mer;2026-04-22T12:31:29.324Z;False;False;False
+69e8bf9c63d092b42a75edf9;Thiès;Ngaparou;maison;253.6;True;7.0;6.0;False;piscine|terrasse;750000;NGAPAROU : Villa avec piscine à louer;2026-04-22T12:31:24.318Z;False;False;False
+69e8bf9763d092b42a75edf8;Thiès;Ngaparou;maison;109.8;True;3.0;2.0;False;piscine|gardiennage|terrasse;450000;NGAPAROU : Agréable maison à louer;2026-04-22T12:31:19.572Z;False;False;False
+69e8bf6963d092b42a75edef;Thiès;Nguerine;maison;232.6;True;6.0;5.0;False;jardin|terrasse;1400000;NGUERIGNE : Magnifique villa de 5 chambres à louer à 200m de la route;2026-04-22T12:30:33.573Z;False;False;False
+69e8bf6163d092b42a75eded;Thiès;Nguerine;maison;600.0;False;4.0;3.0;False;piscine|jardin;800000;NGUERIGNE : Villa à louer;2026-04-22T12:30:25.074Z;False;False;False
+69e8bf5d63d092b42a75edec;Thiès;Saly;maison;900.0;False;5.0;4.0;False;piscine|gardiennage|parking|jardin;2500000;SALY : Villa R+2 à louer;2026-04-22T12:30:21.077Z;False;False;False
+69e8bf0363d092b42a75edd6;Thiès;Nguerine;maison;294.1;True;9.0;5.0;False;piscine|climatisation|gardiennage|jardin|terrasse;1800000;NGUERIGNE : Villa contemporaine 5 chambres avec piscine à louer;2026-04-22T12:28:51.624Z;False;False;False
+69e8beff63d092b42a75edd5;Thiès;Nguerine;maison;150.6;True;4.0;3.0;False;piscine;1000000;NGUERIGNE : Villa contemporaine 3 chambres avec piscine à louer;2026-04-22T12:28:47.075Z;False;False;False
+69e8befa63d092b42a75edd4;Thiès;Nguerine;maison;680.0;False;6.0;5.0;False;piscine|climatisation|gardiennage|jardin;1300000;NGUERIGNE : Villa + 4 chambres d’hôtes avec piscine à louer;2026-04-22T12:28:42.572Z;False;False;False
+69e8bef663d092b42a75edd3;Thiès;Nguerine;maison;787.0;False;4.0;3.0;False;piscine|gardiennage|jardin;800000;NGUERIGNE : Belle villa à louer;2026-04-22T12:28:38.572Z;False;False;False
+69e8beef63d092b42a75edd1;Dakar;Almadies;maison;700.0;False;12.0;9.0;False;gardiennage|parking|jardin;2500000;DAKAR ALMADIES : Villa de standing à louer – VIRAGE ALMADIES;2026-04-22T12:28:31.323Z;False;False;False
+69e8bede63d092b42a75edcd;Dakar;Plateau;maison;85.1;True;5.0;4.0;False;;3500;DAKAR PLATEAU : Location entrepôts – Zone industrielle Dakar Km 4,5;2026-04-22T12:28:14.613Z;True;True;True
+69e8bed663d092b42a75edcb;Thiès;Ngaparou;maison;144.0;True;4.0;3.0;False;piscine|gardiennage|meuble;1000000;NGAPAROU : Villa 3 chambres avec piscine à louer;2026-04-22T12:28:06.825Z;False;False;False
+69e8bed163d092b42a75edca;Thiès;Saly;maison;300.0;False;3.0;2.0;False;gardiennage|jardin|terrasse;400000;SALY : Villa à louer 2 chambres;2026-04-22T12:28:01.325Z;False;False;False
+69e8bec663d092b42a75edc8;Dakar;Lac Rose;maison;300.0;False;5.0;3.0;False;piscine|jardin;400000;LAC ROSE : Charmante maison à louer;2026-04-22T12:27:50.824Z;False;False;False
+69e8be9c63d092b42a75edc4;Thiès;Nguerine;maison;167.4;True;5.0;4.0;False;piscine|climatisation|meuble|jardin|terrasse;1200000;NGUERIGNE : Villa contemporaine plain pied 4 chambres avec piscine à louer;2026-04-22T12:27:08.823Z;False;False;False
+69e8be9863d092b42a75edc3;Dakar;Toubab Dialaw;maison;314.1;True;9.0;5.0;False;piscine|gardiennage|parking|terrasse;1100000;TOUBAB DIALAW : Villa 1 200 m2 à louer proche de la mer;2026-04-22T12:27:04.073Z;False;False;False
+69e8be8c63d092b42a75edc0;Thiès;Ngaparou;maison;500.0;False;4.0;2.0;False;piscine|parking|terrasse;500000;NGAPAROU : Villa 2 chambres à louer avec piscine;2026-04-22T12:26:52.370Z;False;False;False
+69e8be8863d092b42a75edbf;Thiès;Saly;maison;600.0;False;5.0;3.0;False;climatisation|gardiennage|meuble|jardin;500000;SALY : Villa 3 chambres à louer – Proche de la mer;2026-04-22T12:26:48.823Z;False;False;False
+69e8be8563d092b42a75edbe;Dakar;Fann;maison;89.4;True;2.0;1.0;False;piscine|gardiennage|parking|meuble|terrasse|salle_de_sport;2000000;DAKAR FANN : Studios meublés de prestige à louer – Résidence NAFAÏA;2026-04-22T12:26:45.074Z;False;False;False
+69e8be7663d092b42a75edbb;Thiès;Ngaparou;maison;197.5;True;6.0;5.0;False;piscine|terrasse;2000000;NGAPAROU : Villa à louer – Zone résidentielle;2026-04-22T12:26:30.351Z;False;False;False
+69e8be6e63d092b42a75edb9;Thiès;Ngaparou;maison;600.0;False;8.0;7.0;False;;2500000;NGAPAROU : Villa à louer 8 pièces;2026-04-22T12:26:22.323Z;False;False;False
+69e8be6163d092b42a75edb6;Thiès;Nguerine;maison;240.6;True;7.0;6.0;False;piscine|gardiennage|jardin|terrasse;2000000;NGUERIGNE : Villa de standing 6 chambres avec piscine à louer;2026-04-22T12:26:09.625Z;False;False;False
+69e8be4163d092b42a75edb2;Thiès;Nguerine;maison;250.7;True;6.0;5.0;False;piscine|parking|jardin;2000000;NGUERIGNE : Villa à louer;2026-04-22T12:25:37.323Z;False;False;False
+69e8be3863d092b42a75edaf;Thiès;Saly;maison;131.3;True;4.0;3.0;False;piscine|gardiennage|meuble|terrasse;900000;SALY : Villa entièrement meublée de 3 chambres à louer – JOSEPH;2026-04-22T12:25:28.073Z;False;False;False
+69e8be3463d092b42a75edae;Dakar;Ngor;maison;212.5;True;6.0;4.0;False;gardiennage;1200000;DAKAR NGOR : Villa à louer – Ngor Almadies;2026-04-22T12:25:24.572Z;False;False;False
+69e8be3063d092b42a75edad;Thiès;Ngaparou;maison;271.8;True;7.0;6.0;False;piscine|parking|meuble|jardin|terrasse;950000;NGAPAROU : Villa neuve à louer;2026-04-22T12:25:20.323Z;False;False;False
+69e8be2263d092b42a75eda9;Thiès;Nianing;maison;860.0;False;5.0;4.0;False;piscine|gardiennage|terrasse;600000;NIANING : Magnifique Villa à louer;2026-04-22T12:25:06.330Z;False;False;False
+69e8bdf063d092b42a75ed9f;Thiès;Nguerine;maison;242.8;True;6.0;5.0;False;piscine|jardin|terrasse;1400000;NGUÉRIGNE : Villa d’exception à louer;2026-04-22T12:24:16.823Z;False;False;False
+69e8bdde63d092b42a75ed9a;Thiès;Ngaparou;maison;840.0;False;5.0;4.0;False;piscine|meuble|terrasse;1500000;NGAPAROU : Villa à louer;2026-04-22T12:23:58.822Z;False;False;False
+69e8bdda63d092b42a75ed99;Thiès;Ngaparou;maison;600.0;False;8.0;7.0;False;;2500000;NGAPAROU : Villa à louer;2026-04-22T12:23:54.823Z;False;False;False
+69e8bdc863d092b42a75ed94;Thiès;Nguerine;maison;168.1;True;4.0;3.0;False;gardiennage|jardin|terrasse;800000;NGUERIGNE : Villa à louer;2026-04-22T12:23:36.118Z;False;False;False
+69e8bdc463d092b42a75ed93;Thiès;Nguerine;maison;600.0;False;5.0;4.0;False;piscine|gardiennage|terrasse;1000000;NGUERIGNE : Villa à louer;2026-04-22T12:23:32.074Z;False;False;False
+69e8bdbf63d092b42a75ed92;Thiès;Nguerine;maison;830.0;False;4.0;4.0;False;piscine|climatisation|meuble|wifi;1300000;NGUERIGNE : Villa à louer;2026-04-22T12:23:27.572Z;False;False;False
+69e8bdbc63d092b42a75ed91;Thiès;Nguerine;maison;600.0;False;5.0;5.0;False;piscine|jardin;1800000;NGUERIGNE : Magnifique villa à louer;2026-04-22T12:23:24.322Z;False;False;False
+69e8bdb463d092b42a75ed8f;Thiès;Saly;maison;199.7;True;5.0;4.0;False;piscine|terrasse;800000;SALY : Villa à louer avec piscine;2026-04-22T12:23:16.616Z;False;False;False
+69e8bdb063d092b42a75ed8e;Thiès;Ngaparou;maison;600.0;False;5.0;4.0;False;piscine|gardiennage|meuble|terrasse;1000000;NGAPAROU : Villa à louer 4 chambres;2026-04-22T12:23:12.615Z;False;False;False
+69e8bdad63d092b42a75ed8d;Thiès;Somone;maison;600.0;False;4.0;3.0;False;piscine|terrasse;1500000;SOMONE : Villa à louer;2026-04-22T12:23:09.874Z;False;False;False
+69e8bda863d092b42a75ed8c;Thiès;Saly;maison;132.5;True;3.0;2.0;False;jardin;500000;SALY : Villa à louer;2026-04-22T12:23:04.573Z;False;False;False
+69e8bd8863d092b42a75ed8b;Thiès;Saly;maison;150.0;False;4.0;3.0;False;gardiennage|parking|jardin|terrasse;800000;SALY : Magnifique villa à louer en résidence;2026-04-22T12:22:32.573Z;False;False;False
+69e8bd8463d092b42a75ed8a;Thiès;Saly;maison;561.0;False;4.0;3.0;False;meuble|terrasse;500000;SALY : Villa à louer – Niakhniakhal;2026-04-22T12:22:28.350Z;False;False;False
+69e8bd7c63d092b42a75ed87;Thiès;Saly;maison;204.6;True;6.0;5.0;False;piscine|gardiennage|jardin|terrasse;1300000;SALY : Villa neuve à louer;2026-04-22T12:22:20.324Z;False;False;False
+69e8bd7763d092b42a75ed86;Thiès;Ngaparou;maison;153.2;True;4.0;3.0;False;piscine|jardin|terrasse;650000;NGAPAROU : Magnifique villa à louer;2026-04-22T12:22:15.822Z;False;False;False
+69e8bd7463d092b42a75ed85;Thiès;Saly;maison;70.0;False;2.0;1.0;False;piscine|wifi|jardin;420000;SALY : Villa à louer;2026-04-22T12:22:12.073Z;False;False;False
+69e8bd5963d092b42a75ed7e;Thiès;Saly;maison;300.0;False;5.0;4.0;False;piscine|gardiennage|terrasse;1500000;SALY : Magnifique villa à louer;2026-04-22T12:21:45.599Z;False;False;False
+69e8bd1e63d092b42a75ed73;Thiès;Nguerine;maison;162.8;True;4.0;3.0;False;piscine|jardin|terrasse;1000000;NGUERIGNE : Magnifique Villa à louer;2026-04-22T12:20:46.865Z;False;False;False
+69e8bd1663d092b42a75ed71;Dakar;Fann;maison;227.2;True;6.0;4.0;False;parking|terrasse;2500000;DAKAR FANN RÉSIDENCE : Villa d’architecte à louer;2026-04-22T12:20:38.323Z;False;False;False
+69e8bd0663d092b42a75ed6d;Thiès;Ngaparou;maison;600.0;False;5.0;4.0;False;piscine|meuble|jardin|terrasse;750000;NGAPAROU : Villa familiale à louer;2026-04-22T12:20:22.322Z;False;False;False
+69e8bcf363d092b42a75ed67;Dakar;Cité Keur Gorgui;maison;198.9;True;5.0;4.0;False;meuble;1000000;DAKAR CITÉ KEUR GORGUI : Location plateau de bureau;2026-04-22T12:20:03.823Z;False;False;True
+69e8bce763d092b42a75ed64;Thiès;Nguerine;maison;252.7;True;6.0;5.0;False;piscine|gardiennage|parking|jardin|terrasse;1800000;NGUERIGNE : Villa à louer;2026-04-22T12:19:51.573Z;False;False;False
+69e8bcd363d092b42a75ed63;Thiès;Nguerine;maison;166.5;True;4.0;3.0;False;piscine|parking|salle_de_sport;1700000;NGUERIGNE : Villa à louer;2026-04-22T12:19:31.572Z;False;False;False
+69e8bcb463d092b42a75ed5a;Thiès;Ngaparou;maison;600.0;False;4.0;3.0;False;piscine|parking|terrasse;1300000;NGAPAROU : Magnifique villa à louer;2026-04-22T12:19:00.600Z;False;False;False
+69e8bcb063d092b42a75ed59;Dakar;Point E;maison;143.9;True;4.0;4.0;False;gardiennage|meuble;1200000;DAKAR POINT-E : Bureau meublé à louer;2026-04-22T12:18:56.856Z;False;False;True
+69e8bcaa63d092b42a75ed57;Dakar;Mamelles;maison;177.2;True;6.0;5.0;False;piscine|jardin|terrasse;1500000;DAKAR MAMELLES : Belle villa R+1 à louer;2026-04-22T12:18:50.323Z;False;False;False
+69e8bca663d092b42a75ed56;Thiès;Ngaparou;maison;235.3;True;6.0;5.0;False;piscine|jardin|terrasse;1500000;NGAPAROU : Villa à louer;2026-04-22T12:18:46.357Z;False;False;False
+69e8bc9f63d092b42a75ed54;Thiès;Ngaparou;maison;671.0;False;5.0;3.0;False;piscine|climatisation|parking|jardin;1100000;NGAPAROU : Belle villa à louer;2026-04-22T12:18:39.569Z;False;False;False
+69e8bc9063d092b42a75ed50;Thiès;Ngaparou;maison;181.4;True;5.0;4.0;False;piscine|parking;2250000;NGAPAROU : Magnifique villa à louer;2026-04-22T12:18:24.613Z;False;False;False
+69e8bc8063d092b42a75ed4f;Thiès;Saly;maison;237.7;True;6.0;4.0;False;piscine|gardiennage|parking|meuble|terrasse|salle_de_sport;800000;SALY : Villa meublée à louer avec piscine;2026-04-22T12:18:08.857Z;False;False;False
