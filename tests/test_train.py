@@ -6,13 +6,14 @@ vrai contexte Hydra) mais les fonctions pures qu'il utilise, qui contiennent
 toute la logique métier testable.
 """
 
+import numpy as np
 import pandas as pd
 import pytest
 from omegaconf import OmegaConf
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import Ridge
 
-from senegal_rental_price.models.train import evaluate, get_model
+from senegal_rental_price.models.train import cross_validate_model, evaluate, get_model
 
 
 class TestGetModel:
@@ -65,3 +66,46 @@ class TestEvaluate:
         assert metrics["mae"] == 0
         assert metrics["rmse"] == 0
         assert metrics["r2"] == 1.0
+
+
+class TestCrossValidateModel:
+    @pytest.fixture
+    def toy_data(self) -> tuple[pd.DataFrame, pd.Series]:
+        """Jeu de données synthétique suffisant pour tester la mécanique de la CV (pas la qualité du fit)."""
+        rng = np.random.default_rng(42)
+        n = 50
+        X = pd.DataFrame(
+            {
+                "surface_m2": rng.uniform(20, 300, n),
+                "nb_pieces": rng.integers(1, 8, n),
+            }
+        )
+        y = pd.Series(50_000 + X["surface_m2"] * 5_000 + rng.normal(0, 50_000, n))
+        return X, y
+
+    def test_returns_expected_keys(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+        X, y = toy_data
+        result = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
+        expected_keys = {"cv_mae_mean", "cv_mae_std", "cv_rmse_mean", "cv_rmse_std", "cv_r2_mean", "cv_r2_std"}
+        assert set(result.keys()) == expected_keys
+
+    def test_metrics_are_non_negative_where_expected(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+        X, y = toy_data
+        result = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
+        assert result["cv_mae_mean"] >= 0
+        assert result["cv_rmse_mean"] >= 0
+        assert result["cv_mae_std"] >= 0
+
+    def test_is_deterministic_with_fixed_seed(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+        X, y = toy_data
+        result_1 = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
+        result_2 = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
+        assert result_1 == result_2
+
+    def test_does_not_mutate_original_model(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+        X, y = toy_data
+        model = Ridge()
+        cross_validate_model(model, X, y, n_splits=5, seed=42)
+        # Le modèle passé en argument ne doit jamais être fit lui-même (on clone
+        # à chaque pli) : il ne doit donc pas avoir d'attribut "coef_" après coup.
+        assert not hasattr(model, "coef_")

@@ -90,6 +90,10 @@ class TestSelectFeatureColumns:
         for col in ["id", "titre", "adresse", "date_publication", "quartier"]:
             assert col not in result.columns
 
+    def test_drops_prix_atypique_to_avoid_leakage(self, cleaned_df: pd.DataFrame) -> None:
+        result = select_feature_columns(cleaned_df)
+        assert "prix_atypique" not in result.columns
+
     def test_keeps_relevant_columns(self, cleaned_df: pd.DataFrame) -> None:
         result = select_feature_columns(cleaned_df)
         for col in ["surface_m2", "nb_pieces", "prix_loyer_mensuel", "meuble"]:
