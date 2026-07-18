@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [adama]
   pull_request:
-    branches: [main]
+    branches: [adama]
 
 jobs:
   quality:
