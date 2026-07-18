@@ -31,7 +31,12 @@ EQUIPEMENTS_CONNUS = [
 ]
 
 # Colonnes purement informatives/traçabilité, jamais utilisées comme features.
-COLONNES_NON_FEATURES = ["id", "titre", "adresse", "date_publication"]
+# `prix_atypique` est explicitement exclue : elle est calculée à partir du prix
+# lui-même (cf. preprocessing.flag_prix_extremes), donc l'utiliser comme feature
+# d'entraînement serait une fuite de données (data leakage) — et de toute façon
+# impossible à fournir honnêtement à l'API pour une nouvelle annonce, puisqu'on
+# ne connaît pas encore son prix (c'est justement ce qu'on prédit).
+COLONNES_NON_FEATURES = ["id", "titre", "adresse", "date_publication", "prix_atypique"]
 
 TARGET_COLUMN = "prix_loyer_mensuel"
 
@@ -75,6 +80,18 @@ def select_feature_columns(df: pd.DataFrame) -> pd.DataFrame:
     if "quartier" in df.columns:
         columns_to_drop.append("quartier")
     return df.drop(columns=columns_to_drop)
+
+
+def align_features(df: pd.DataFrame, feature_columns: Sequence[str]) -> pd.DataFrame:
+    """
+    Aligne les colonnes de `df` sur exactement celles vues à l'entraînement
+    (`feature_columns`), dans le même ordre. Les colonnes manquantes (ex. une
+    ville qui n'a pas été one-hot encodée car absente du batch d'entraînement)
+    sont ajoutées avec la valeur 0/False. Indispensable pour l'inférence via
+    l'API : le modèle attend un vecteur de features de forme identique à celle
+    utilisée pendant `fit()`.
+    """
+    return df.reindex(columns=list(feature_columns), fill_value=False)
 
 
 def build_feature_matrix(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:

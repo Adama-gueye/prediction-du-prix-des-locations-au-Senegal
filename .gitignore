@@ -1,2 +1,7 @@
 venv
 data/raw
+*.egg-info/
+logs/
+mlruns/
+outputs/
+
