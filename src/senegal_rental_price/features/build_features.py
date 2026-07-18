@@ -47,8 +47,8 @@ def parse_equipements(df: pd.DataFrame) -> pd.DataFrame:
     autant de colonnes binaires (`equip_piscine`, `equip_parking`, ...).
     """
     df = df.copy()
-    equipements_lists = df["equipements"].fillna("").apply(
-        lambda s: set(s.split("|")) if s else set()
+    equipements_lists = (
+        df["equipements"].fillna("").apply(lambda s: set(s.split("|")) if s else set())
     )
 
     for equip in EQUIPEMENTS_CONNUS:
@@ -58,7 +58,9 @@ def parse_equipements(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def encode_categorical(df: pd.DataFrame, columns: Sequence[str] = ("ville", "type_bien")) -> pd.DataFrame:
+def encode_categorical(
+    df: pd.DataFrame, columns: Sequence[str] = ("ville", "type_bien")
+) -> pd.DataFrame:
     """
     One-hot encode les variables catégorielles à faible cardinalité.
 

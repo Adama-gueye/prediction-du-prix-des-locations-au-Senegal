@@ -56,9 +56,7 @@ def clean_villes(df: pd.DataFrame) -> pd.DataFrame:
 
     valeurs_rares = set(df["ville"].unique()) - VILLES_FREQUENTES
     if valeurs_rares:
-        logger.info(
-            "Valeurs de ville hors de la liste habituelle (conservées) : %s", valeurs_rares
-        )
+        logger.info("Valeurs de ville hors de la liste habituelle (conservées) : %s", valeurs_rares)
     return df
 
 

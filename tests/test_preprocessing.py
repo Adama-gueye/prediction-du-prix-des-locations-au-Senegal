@@ -41,7 +41,9 @@ def sample_df() -> pd.DataFrame:
 
 
 class TestLoadRawData:
-    def test_load_raw_data_reads_csv_correctly(self, tmp_path: Path, sample_df: pd.DataFrame) -> None:
+    def test_load_raw_data_reads_csv_correctly(
+        self, tmp_path: Path, sample_df: pd.DataFrame
+    ) -> None:
         csv_path = tmp_path / "raw.csv"
         sample_df.to_csv(csv_path, sep=";", index=False, encoding="utf-8-sig")
 
@@ -137,7 +139,9 @@ class TestHandleMissingValues:
 
 
 class TestCleanPipeline:
-    def test_clean_pipeline_creates_output_file(self, tmp_path: Path, sample_df: pd.DataFrame) -> None:
+    def test_clean_pipeline_creates_output_file(
+        self, tmp_path: Path, sample_df: pd.DataFrame
+    ) -> None:
         raw_path = tmp_path / "raw.csv"
         processed_path = tmp_path / "processed" / "locations_clean.csv"
         sample_df.to_csv(raw_path, sep=";", index=False, encoding="utf-8-sig")
@@ -147,7 +151,9 @@ class TestCleanPipeline:
         assert processed_path.exists()
         assert len(result) == len(sample_df)
 
-    def test_clean_pipeline_preserves_all_rows(self, tmp_path: Path, sample_df: pd.DataFrame) -> None:
+    def test_clean_pipeline_preserves_all_rows(
+        self, tmp_path: Path, sample_df: pd.DataFrame
+    ) -> None:
         raw_path = tmp_path / "raw.csv"
         processed_path = tmp_path / "processed" / "locations_clean.csv"
         sample_df.to_csv(raw_path, sep=";", index=False, encoding="utf-8-sig")
@@ -157,7 +163,9 @@ class TestCleanPipeline:
         # Décision produit : aucune ligne n'est jamais exclue par ce pipeline.
         assert len(result) == len(sample_df)
 
-    def test_clean_pipeline_drops_adresse_column(self, tmp_path: Path, sample_df: pd.DataFrame) -> None:
+    def test_clean_pipeline_drops_adresse_column(
+        self, tmp_path: Path, sample_df: pd.DataFrame
+    ) -> None:
         raw_path = tmp_path / "raw.csv"
         processed_path = tmp_path / "processed" / "locations_clean.csv"
         sample_df.to_csv(raw_path, sep=";", index=False, encoding="utf-8-sig")

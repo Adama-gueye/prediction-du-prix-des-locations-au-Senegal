@@ -9,7 +9,6 @@ Usage strictement académique - projet M2 DSIA.
 
 import csv
 import random
-import re
 import sys
 import time
 from typing import Any
@@ -23,8 +22,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 BASE_URL = "https://neobien.com/api/realEstate"
 HEADERS = {
-    # Un vrai User-Agent de navigateur : certaines API bloquent ou renvoient
-    # une réponse différente pour un UA générique de script.
+    # Un vrai User-Agent de navigateur : l'API bloque/renvoie une réponse
+    # différente pour un UA générique de script.
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -38,7 +37,7 @@ HEADERS = {
 LIMIT = 12
 SLEEP_BETWEEN_REQUESTS = 1.0  # politesse envers le serveur, à ne pas descendre trop bas
 OUTPUT_CSV = "locations.csv"
-DEBUG = True  # passe à False une fois que ça fonctionne
+DEBUG = False  # passe à True pour déboguer les réponses brutes de l'API
 
 # Mots-clés simples pour détecter des équipements dans le texte libre (title + description).
 # Heuristique volontairement basique : à documenter comme limitation dans le rapport.
@@ -97,11 +96,6 @@ def generate_synthetic_surface(item: dict[str, Any], property_type: str) -> tupl
     sur le nombre de pièces et le type de bien, avec une variabilité aléatoire
     mais DÉTERMINISTE (seedée sur l'id de l'annonce) : relancer le scraper sur
     la même annonce donnera toujours la même surface estimée.
-
-    Barèmes indicatifs (m2) :
-    - appartement : ~15 m2 de base + ~18 m2/pièce
-    - maison/villa : ~25 m2 de base + ~30 m2/pièce (plus grandes, jardins, etc.)
-    À documenter comme limitation/méthodologie dans le rapport.
     """
     raw_surface = item.get("property_surface")
     if raw_surface and isinstance(raw_surface, (int, float)) and raw_surface > 5:
@@ -117,7 +111,6 @@ def generate_synthetic_surface(item: dict[str, Any], property_type: str) -> tupl
 
     estimated = base + per_room * rooms
 
-    # Bruit déterministe : seedé sur l'id de l'annonce pour la reproductibilité.
     rng = random.Random(item.get("_id", str(rooms)))
     noise_factor = rng.uniform(0.85, 1.25)
     estimated *= noise_factor
@@ -131,8 +124,6 @@ def parse_annonce(item: dict[str, Any], property_type: str) -> dict[str, Any] | 
     Transforme une entrée brute de l'API vers le schéma attendu par le projet.
     Retourne None si l'annonce doit être exclue (prix invalide, location saisonnière...).
     """
-    # On ne garde que les locations mensuelles classiques (pas les locations
-    # saisonnières / journalières type Airbnb, qui faussent la cible).
     if item.get("rentalPeriod") != "monthly":
         return None
 
@@ -144,9 +135,7 @@ def parse_annonce(item: dict[str, Any], property_type: str) -> dict[str, Any] | 
 
     return {
         "id": item.get("_id"),
-        # region = ville au sens large (Dakar, Thiès, Ziguinchor...)
         "ville": item.get("region"),
-        # city = quartier/commune précise (Almadies, Ngaparou, Nguerine...)
         "quartier": item.get("city"),
         "type_bien": property_type,
         "surface_m2": surface_m2,
@@ -156,7 +145,6 @@ def parse_annonce(item: dict[str, Any], property_type: str) -> dict[str, Any] | 
         "meuble": item.get("furnished"),
         "equipements": extract_equipements(item),
         "prix_loyer_mensuel": price,
-        # Champs bruts utiles pour la traçabilité / le rapport, pas dans le schéma final du PDF
         "titre": item.get("title"),
         "adresse": item.get("address"),
         "date_publication": item.get("createdAt"),
@@ -172,7 +160,7 @@ def scrape_property_type(property_type: str) -> list[dict[str, Any]]:
         data = fetch_page(property_type, page)
         items = data.get("data", [])
         meta = data.get("meta", {})
-        total_pages = meta.get("totalPages", page)  # fallback: s'arrête après cette page si absent
+        total_pages = meta.get("totalPages", page)
 
         if not items:
             print(f"Aucune annonce trouvée à la page {page} pour {property_type}")
@@ -205,17 +193,10 @@ def main() -> None:
         return
 
     fieldnames = list(all_results[0].keys())
-    # Excel en version française attend le point-virgule comme séparateur par
-    # défaut (la virgule sert de séparateur décimal chez lui). On l'utilise
-    # ici pour que le CSV s'ouvre correctement sans configuration manuelle.
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
         for row in all_results:
-            # equipements est une liste -> on la sérialise en chaîne pour le CSV.
-            # Séparateur "|" choisi pour ne jamais entrer en conflit avec le
-            # délimiteur ";" du CSV, même si le module csv gère déjà correctement
-            # le cas via les guillemets automatiques.
             row = dict(row)
             row["equipements"] = "|".join(row["equipements"])
             writer.writerow(row)

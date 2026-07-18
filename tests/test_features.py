@@ -118,7 +118,9 @@ class TestBuildFeatureMatrix:
         with pytest.raises(KeyError):
             build_feature_matrix(df_sans_cible)
 
-    def test_no_identifier_or_text_columns_in_final_features(self, cleaned_df: pd.DataFrame) -> None:
+    def test_no_identifier_or_text_columns_in_final_features(
+        self, cleaned_df: pd.DataFrame
+    ) -> None:
         X, _ = build_feature_matrix(cleaned_df)
         for col in ["id", "titre", "adresse", "date_publication", "quartier"]:
             assert col not in X.columns

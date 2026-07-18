@@ -86,17 +86,28 @@ class TestCrossValidateModel:
     def test_returns_expected_keys(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
         X, y = toy_data
         result = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
-        expected_keys = {"cv_mae_mean", "cv_mae_std", "cv_rmse_mean", "cv_rmse_std", "cv_r2_mean", "cv_r2_std"}
+        expected_keys = {
+            "cv_mae_mean",
+            "cv_mae_std",
+            "cv_rmse_mean",
+            "cv_rmse_std",
+            "cv_r2_mean",
+            "cv_r2_std",
+        }
         assert set(result.keys()) == expected_keys
 
-    def test_metrics_are_non_negative_where_expected(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+    def test_metrics_are_non_negative_where_expected(
+        self, toy_data: tuple[pd.DataFrame, pd.Series]
+    ) -> None:
         X, y = toy_data
         result = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
         assert result["cv_mae_mean"] >= 0
         assert result["cv_rmse_mean"] >= 0
         assert result["cv_mae_std"] >= 0
 
-    def test_is_deterministic_with_fixed_seed(self, toy_data: tuple[pd.DataFrame, pd.Series]) -> None:
+    def test_is_deterministic_with_fixed_seed(
+        self, toy_data: tuple[pd.DataFrame, pd.Series]
+    ) -> None:
         X, y = toy_data
         result_1 = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)
         result_2 = cross_validate_model(Ridge(), X, y, n_splits=5, seed=42)

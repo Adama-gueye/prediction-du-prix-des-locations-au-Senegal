@@ -13,7 +13,11 @@ from typing import Any
 import pandas as pd
 from sklearn.base import BaseEstimator
 
-from senegal_rental_price.features.build_features import align_features, encode_categorical, parse_equipements
+from senegal_rental_price.features.build_features import (
+    align_features,
+    encode_categorical,
+    parse_equipements,
+)
 from senegal_rental_price.models.predict import load_model
 from senegal_rental_price.utils.logger import get_logger
 
