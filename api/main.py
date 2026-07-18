@@ -7,6 +7,7 @@ Lancement :
 Documentation interactive : http://localhost:8000/docs
 """
 
+import os
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
@@ -51,15 +52,14 @@ app = FastAPI(
 )
 
 # CORS : sans ça, le navigateur bloque silencieusement les appels venant du
-# frontend React (localhost:5173) vers cette API (localhost:8000), puisque
-# ce sont deux origines différentes. C'est la cause la plus probable de
-# l'erreur générique vue côté React ("Une erreur est survenue.").
+# frontend vers cette API si elles ne sont pas sur la même origine. La liste
+# d'origines autorisées est injectée par variable d'environnement (CORS_ORIGINS,
+# séparées par des virgules) plutôt que codée en dur, pour permettre de changer
+# de configuration entre dev local et conteneurs Docker sans toucher au code.
+cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=cors_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )

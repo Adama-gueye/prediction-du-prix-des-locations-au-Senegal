@@ -1,10 +1,11 @@
 """
-Chargement du modèle (une seule fois, au démarrage de l'API) et conversion
-d'une requête utilisateur (RentalFeatures) en vecteur de features aligné sur
-celui utilisé à l'entraînement.
+Chargement du modèle (une seule fois, au démarrage) et conversion d'une
+requête utilisateur (RentalFeatures) en vecteur de features aligné sur celui
+utilisé à l'entraînement.
 """
 
 import json
+import os
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -20,7 +21,9 @@ from api.schemas import RentalFeatures
 
 logger = get_logger(__name__)
 
-MODELS_DIR = Path("models")
+# Surchargeable via variable d'environnement (utile en conteneur Docker, où
+# le dossier des modèles peut être monté à un autre chemin qu'en local).
+MODELS_DIR = Path(os.getenv("MODELS_DIR", "models"))
 DEFAULT_MODEL_NAME = "random_forest"  # le meilleur des 3 modèles comparés (cf. rapport)
 
 
