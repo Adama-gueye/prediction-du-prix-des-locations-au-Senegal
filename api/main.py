@@ -11,6 +11,7 @@ from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from senegal_rental_price.models.predict import predict
 from senegal_rental_price.utils.logger import get_logger
@@ -47,6 +48,20 @@ app = FastAPI(
     ),
     version="1.0.0",
     lifespan=lifespan,
+)
+
+# CORS : sans ça, le navigateur bloque silencieusement les appels venant du
+# frontend React (localhost:5173) vers cette API (localhost:8000), puisque
+# ce sont deux origines différentes. C'est la cause la plus probable de
+# l'erreur générique vue côté React ("Une erreur est survenue.").
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
