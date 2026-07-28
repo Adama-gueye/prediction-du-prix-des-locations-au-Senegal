@@ -8,7 +8,7 @@ Usage :
 """
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -183,7 +183,7 @@ def main(cfg: DictConfig) -> None:
         metadata = {
             "name": cfg.model.name,
             "version": "1.0.0",
-            "trained_at": datetime.now(timezone.utc).isoformat(),
+            "trained_at": datetime.now(UTC).isoformat(),
             "metrics": {**metrics, **cv_metrics},
         }
         metadata_path = output_dir / f"{cfg.model.name}_metadata.json"

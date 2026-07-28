@@ -7,7 +7,7 @@ des données (déjà fait), il les TRANSFORME pour l'apprentissage (encodage,
 parsing, sélection de colonnes).
 """
 
-from typing import Sequence
+from collections.abc import Sequence
 
 import pandas as pd
 

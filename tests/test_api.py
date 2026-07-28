@@ -3,14 +3,13 @@
 import json
 from pathlib import Path
 
+import api.dependencies as deps
 import joblib
 import pandas as pd
 import pytest
+from api.main import app
 from fastapi.testclient import TestClient
 from sklearn.linear_model import LinearRegression
-
-import api.dependencies as deps
-from api.main import app
 
 
 @pytest.fixture

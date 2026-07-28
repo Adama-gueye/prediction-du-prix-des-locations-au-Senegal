@@ -46,14 +46,14 @@ class TestParseEquipements:
 
     def test_binary_columns_have_correct_values(self, cleaned_df: pd.DataFrame) -> None:
         result = parse_equipements(cleaned_df)
-        assert result.loc[0, "equip_piscine"] == True  # noqa: E712
-        assert result.loc[0, "equip_gardiennage"] == False  # noqa: E712
-        assert result.loc[1, "equip_gardiennage"] == True  # noqa: E712
+        assert result.loc[0, "equip_piscine"] == True
+        assert result.loc[0, "equip_gardiennage"] == False
+        assert result.loc[1, "equip_gardiennage"] == True
 
     def test_empty_equipements_gives_all_false(self, cleaned_df: pd.DataFrame) -> None:
         result = parse_equipements(cleaned_df)
-        assert result.loc[2, "equip_piscine"] == False  # noqa: E712
-        assert result.loc[2, "equip_gardiennage"] == False  # noqa: E712
+        assert result.loc[2, "equip_piscine"] == False
+        assert result.loc[2, "equip_gardiennage"] == False
 
     def test_original_equipements_column_is_dropped(self, cleaned_df: pd.DataFrame) -> None:
         result = parse_equipements(cleaned_df)

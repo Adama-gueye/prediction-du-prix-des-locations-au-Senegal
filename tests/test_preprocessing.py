@@ -75,13 +75,13 @@ class TestFlagPrixExtremes:
     def test_flag_prix_extremes_flags_out_of_range_values(self, sample_df: pd.DataFrame) -> None:
         result = flag_prix_extremes(sample_df)
         # 3 500 FCFA et 15 000 000 FCFA sont hors de [PRIX_ALERTE_BAS, PRIX_ALERTE_HAUT]
-        assert result.loc[1, "prix_atypique"] == True  # noqa: E712
-        assert result.loc[3, "prix_atypique"] == True  # noqa: E712
+        assert result.loc[1, "prix_atypique"] == True
+        assert result.loc[3, "prix_atypique"] == True
 
     def test_flag_prix_extremes_does_not_flag_normal_values(self, sample_df: pd.DataFrame) -> None:
         result = flag_prix_extremes(sample_df)
-        assert result.loc[0, "prix_atypique"] == False  # noqa: E712
-        assert result.loc[2, "prix_atypique"] == False  # noqa: E712
+        assert result.loc[0, "prix_atypique"] == False
+        assert result.loc[2, "prix_atypique"] == False
 
     def test_prix_alerte_bounds_are_coherent(self) -> None:
         assert PRIX_ALERTE_BAS < PRIX_ALERTE_HAUT
@@ -114,13 +114,13 @@ class TestHandleMissingValues:
 
     def test_imputation_flags_are_correct(self, sample_df: pd.DataFrame) -> None:
         result = handle_missing_values(sample_df)
-        assert result.loc[1, "nb_pieces_imputee"] == True  # noqa: E712
-        assert result.loc[0, "nb_pieces_imputee"] == False  # noqa: E712
-        assert result.loc[2, "nb_chambres_imputee"] == True  # noqa: E712
+        assert result.loc[1, "nb_pieces_imputee"] == True
+        assert result.loc[0, "nb_pieces_imputee"] == False
+        assert result.loc[2, "nb_chambres_imputee"] == True
 
     def test_meuble_defaults_to_false(self, sample_df: pd.DataFrame) -> None:
         result = handle_missing_values(sample_df)
-        assert result.loc[1, "meuble"] == False  # noqa: E712
+        assert result.loc[1, "meuble"] == False
 
     def test_missing_text_fields_replaced_with_placeholder(self, sample_df: pd.DataFrame) -> None:
         result = handle_missing_values(sample_df)

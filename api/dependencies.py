@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
+from api.schemas import RentalFeatures
 from sklearn.base import BaseEstimator
 
 from senegal_rental_price.features.build_features import (
@@ -20,8 +21,6 @@ from senegal_rental_price.features.build_features import (
 )
 from senegal_rental_price.models.predict import load_model
 from senegal_rental_price.utils.logger import get_logger
-
-from api.schemas import RentalFeatures
 
 logger = get_logger(__name__)
 

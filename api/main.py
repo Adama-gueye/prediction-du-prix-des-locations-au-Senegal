@@ -8,14 +8,8 @@ Documentation interactive : http://localhost:8000/docs
 """
 
 import os
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import AsyncIterator
-
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-
-from senegal_rental_price.models.predict import predict
-from senegal_rental_price.utils.logger import get_logger
 
 from api.dependencies import (
     build_input_dataframe,
@@ -23,6 +17,11 @@ from api.dependencies import (
     get_model_metadata,
 )
 from api.schemas import HealthResponse, ModelInfo, PredictionResponse, RentalFeatures
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+
+from senegal_rental_price.models.predict import predict
+from senegal_rental_price.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
