@@ -52,7 +52,7 @@ def parse_equipements(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     for equip in EQUIPEMENTS_CONNUS:
-        df[f"equip_{equip}"] = equipements_lists.apply(lambda s: equip in s)
+        df[f"equip_{equip}"] = equipements_lists.apply(lambda s, equip=equip: equip in s)
 
     df = df.drop(columns=["equipements"])
     return df
