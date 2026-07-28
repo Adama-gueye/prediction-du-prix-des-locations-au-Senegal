@@ -1,0 +1,21 @@
+[
+  "surface_m2",
+  "surface_estimee",
+  "nb_pieces",
+  "nb_chambres",
+  "meuble",
+  "nb_pieces_imputee",
+  "nb_chambres_imputee",
+  "equip_piscine",
+  "equip_climatisation",
+  "equip_gardiennage",
+  "equip_parking",
+  "equip_meuble",
+  "equip_wifi",
+  "equip_jardin",
+  "equip_terrasse",
+  "equip_salle_de_sport",
+  "ville_Diakhirate",
+  "ville_Thiès",
+  "type_bien_maison"
+]
